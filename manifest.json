@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Reddit Thread Finder",
+  "version": "1.2",
+  "description": "Finds and navigates to a Reddit thread linking to the current page.",
+  "default_locale": "en",
+  "action": {
+    "default_popup": "popup.html",
+    "default_width": 400,
+    "default_height": 200
+  },
+    "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "permissions": [
+    "tabs"
+  ]
+}

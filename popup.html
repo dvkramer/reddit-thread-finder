@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Reddit Link Finder</title>
+<style>
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  background-color: #222;
+}
+
+#dialog {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 30px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  min-width: 300px;
+  max-width: 500px;
+  box-sizing: border-box;
+}
+
+#dialog button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#dialog button:hover {
+  background-color: #0056b3;
+}
+
+#loading {
+  display: none;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#loading::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: 4px solid #eee;
+  border-top: 4px solid #007bff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>
+</head>
+<body>
+<div id="dialog" style="display:none;">
+  <p id="dialogMessage"></p>
+  <button id="dialogClose">OK</button>
+</div>
+<div id="loading"></div>
+<script src="popup.js"></script>
+</body>
+</html>
