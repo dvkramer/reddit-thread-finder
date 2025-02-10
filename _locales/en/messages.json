@@ -1,0 +1,10 @@
+{
+  "extensionName": {
+    "message": "Reddit Thread Finder",
+    "description": "The name of the extension"
+  },
+  "extensionDescription": {
+    "message": "Finds and navigates to a Reddit thread linking to the current page",
+    "description": "The description of the extension"
+  }
+}
